@@ -1,1 +1,140 @@
+/* ----- Base Styles ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fdfcfb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ----- Navigation ----- */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #222;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #7b4b94;
+}
+
+/* ----- Hero Section ----- */
+.hero {
+  background: url('images/hero-bg.jpg') center/cover no-repeat;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  background-color: #4a306d;
+  background-blend-mode: multiply;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  color: #e6dce9;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #7b4b94;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #5c3373;
+}
+
+/* ----- Intro Section ----- */
+.intro {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3d2b56;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* ----- Footer ----- */
+footer {
+  background-color: #faf9f8;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid #e0dede;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #7b4b94;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
 
